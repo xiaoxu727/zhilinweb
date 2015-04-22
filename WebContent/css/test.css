@@ -1,0 +1,205 @@
+html, body, #map{
+		height:100%;
+		padding:0 0;
+		margin:0;
+}
+/*#map{*/
+/*		position:absolute;
+		top:0;
+		left:0;
+		z-index:0;*/
+/*}*/
+.mapSearch{
+		border:0;
+		height:40px;
+		padding:0;
+}
+#topSearchTrabecular{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		background-color:rgba(0, 0, 0, 0);
+		opacity:1;
+		z-index: 100;
+}
+#topSearchBox {
+		width:250px;
+		/*margin:0 0 0 450px;*/
+		/*padding:3px 0;*/
+		z-index: 101;
+		margin:auto;
+}
+#topSearchContainer{
+		margin:6px;
+		margin-bottom:0px;
+}
+#topSearchImg{
+		float:left;
+		width:44px;
+		z-index: 102;
+}
+/*#topSearchTextBox{*/
+		/*float:left;*/
+		/*width:150px;*/
+		/*z-index: 102;*/
+		/*border:2px;*/
+/*}*/
+/*#topSearchButton{*/
+		/*float:left;*/
+		/*width:44px;*/
+		/*z-index: 102;*/
+		/*background-image:url(../resources/search.gif);*/
+/*}*/
+#topSearchContainer>*{
+		height:28px;
+}
+#topLocateBtn{
+		float:left;
+		width:44px;
+		background-image:linear-gradient(#ff7b23,#c14e00);
+}
+#topLocateBtn>i{
+		background-image:url(../resources/crossh2w.png);
+		background-position:center center;
+		width:14px;
+		height:14px;
+		display:inline-block;
+}
+/*#topSearchButton{*/
+		/*background-image:linear-gradient(#ff7b23,#c14e00);*/
+		/*border:none;*/
+/*}*/
+#topLocateBtn{
+		border:none;
+}
+#topSearchTrabecular{
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		margin-right:auto;
+		margin-left:auto;
+		width:1170px;
+		opacity:0.8;
+}
+#topSearchBox{
+		width:434px;
+}
+#topSearchTextBox{
+		width:332px;
+}
+#informationPanel{
+		position:absolute;
+		left:70px;
+		top:85px;
+		height:465px;
+		width:355px;
+		background-color:black;
+		opacity:0.9;
+}
+.boxBorderInPanel{
+		border-style:solid;
+		border-width:2px;
+		border-color:#444;
+}
+#firstLineInPanel{
+		margin:3px;
+		width:345px;
+		height:22px;
+		/*background-color:rgb(0,0,0,0.9);*/
+		/*opacity:0.9;*/
+}
+#panelControlContainer{
+		margin:auto;
+		display:block;
+		width:22px;
+		border:none;
+}
+#panelControl{
+		margin-left:auto;
+		margin-right:auto;
+		height:22px;
+		width:22px;
+		background-image:url(../resources/informationPanel.gif);
+		background-position:center center;
+		border:none;
+}
+#panelControlContainer{
+		margin-top:2px;
+		margin-bottom:2px;
+		height:18px;
+		width:18px;
+}
+#panelControl{
+		height:100%;
+		width:100%;
+}
+.relativeControl{
+		position:relative;
+		left:0;
+		top:0;
+}
+#panelControlContainer{
+		margin-left:0;
+		left:163.5px;
+}
+#informationTablist{
+		width:345px;
+		height:22px;
+		margin-right:auto;
+		margin-left:auto;
+		margin-bottom:3px;
+		border:0;
+		border-style:solid;
+		border-bottom-width:2px;
+		border-color:#444;
+}
+#informationTabSearchBtn{
+		width:50;
+		height:20;
+		float:left;
+		margin-left:25px;
+		text-align:center;
+		background-color:#003;
+		color:#fff;
+}
+#informationContent{
+		width:345;
+		height:400;
+		margin-right:auto;
+		margin-left:auto;
+		/*border: 0 2px 2px;*/
+		border-left:2px #444 solid;
+		border-right:2px #444 solid;
+		border-bottom:2px #444 solid;
+}
+.informationPanelSearchResult{
+		width:340px;
+		height:90px;
+		border:1px #444 solid;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top:1px;
+		margin-bottom:1px;
+		text-align:center;
+		color:white;
+}	
+.showDown{
+		display:none;
+}
+.showUp{
+		display:block;
+}
+.overFlowHidden{
+		overflow:auto;
+}
+#informationTabList button{
+		width:50;
+		height:20;
+		float:left;
+		margin-left:25px;
+		text-align:center;
+		background-color:#003;
+		color:#fff;
+}

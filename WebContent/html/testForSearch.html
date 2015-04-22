@@ -1,0 +1,102 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="../css/test.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+	<link rel="stylesheet" href="http://libs.cartodb.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+		<title>Test</title>
+	<!--just for testing some functions:-->
+	<!--    1. the full-scrolling map-->
+	<!--    2. a half-transparent trabecula on top of the page.-->
+	<!--    3. a text-box for google map search in the middle of the trabecula.-->
+	<!--    4. after the search for the user's interest, the map will be reset. the center and zoom of the map will changed.-->
+	<!--copyright by Joker777 <superyangyw@126.com>-->
+	<!--2014-12-19 16:26-->
+
+    <style type="text/css">
+        body{
+            padding-top: 0;
+        }
+        .mapSearch{
+            margin: 0 auto;
+            margin-top: 10;
+        }
+     .topSearchButton{
+         z-index: 2;
+         position: relative;
+         background-color: #06979e;
+         border-color: #06979e;
+         height: 40;
+     }
+     #topSearchTextBox{
+        border-radius:4px;
+         width: 300;
+         height: 40;
+        }
+    </style>
+</head>
+<body>
+	<!--<div class = "mapSearch" id = "topSearchTrabecular">-->
+			<!--<div class ="mapSearch" id = "topSearchBox">-->
+					<!--<div id="topSearchContainer" class = "mapSearch">-->
+						<!---->
+						<!--&lt;!&ndash;<img id = "topSearchImg" class = "mapSearch" src="../resources/position.png" />&ndash;&gt;-->
+						<!--<button id = "topLocateBtn">-->
+								<!--<i id = "findMe"></i>-->
+						<!--</button>-->
+						<!--<input id = "topSearchTextBox" class = "mapSearch searchContainer20141224" type="text" />-->
+						<!--&lt;!&ndash;<input type="button" class = "mapSearch" id ="topSearchButton" />&ndash;&gt;-->
+						<!--<button class = "mapSearch" id = "topSearchButton" src ="../resources/search.gif"></button>-->
+					<!--</div>-->
+			<!--</div>-->
+	<!--</div>-->
+
+	<div id = "map">
+        <div class="input-group mapSearch">
+            <div class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="topSearchTextBox">Address</label>
+                    <div class="input-group">
+                        <!--<div class="input-group-addon">$</div>-->
+                        <input type="text" class="form-control" id="topSearchTextBox" placeholder="Search for your location">
+                        <!--<div class="input-group-addon">.00</div>-->
+                    </div>
+                </div>
+                <button type="submit" id ="topSearchButton" class="btn btn btn-sm btn-theme topSearchButton" ><img style="width: 30;height: 30;" src ="../resources/search_1.png"></button>
+            </div>
+        </div>
+	</div>
+	<div id="informationPanel" >
+		<div id="firstLineInPanel" class = "boxBorderInPanel relativeControl" >
+				<div id="panelControlContainer" class = "relativeControl">
+					<button id = "panelControl">
+					</button>
+				</div>
+		</div>
+		<div id="informationTabList">
+				<div id="informationTabSearch">
+						<button id = "informationTabSearchBtn" class = "tabBtn">Search
+						</button>
+				</div>
+				<div id="informationTabEcharts">
+						<button id = "informationTabEchartsBtn" class = "tabBtn">Echarts
+						</button>
+				</div>
+		</div>
+		<div id="informationContent" class = "overFlowHidden" >
+
+				<!--<p id = "testP"></p>-->
+		</div>
+		<!--<div id="secondLineInPanel" class = "boxBorderInPanel" >-->
+		<!--</div>-->
+		<!--<div id="contentInPanel" class = "boxBorderInPanel" >-->
+		<!--</div>-->
+	</div>
+	<script type = "text/javascript" charset="utf-8" src="../js/jquery-1.11.2.min.js"> </script>
+	<script src="http://libs.cartodb.com/cartodb.js/v3/3.11/cartodb.js"></script>
+	<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../js/testForSearch.js">	</script>
+</body>
+</html>

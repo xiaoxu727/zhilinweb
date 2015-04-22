@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+<mce:script type="text/javascript"><!--
+$(document).ready(function(){
+    var fa = false;
+    $("#baidu").bind("mouseover",function(event){
+        $(".out .in").show();
+        $(this).css("cursor","pointer");
+    });
+    $("#baidu").bind("mouseout",function(event){        
+        var obj = document.elementFromPoint(event.clientX,event.clientY);
+        if(obj.id == "in")
+        {
+            $(".out .in").hover(function(){
+                $(this).show();
+            },function(){
+                $(this).hide();
+            });
+        }
+        else
+        {
+            $(".out .in").hide();
+        }
+    });    
+});
+// --></mce:script>
+<mce:style><!--
+.out img{border:1px solid #0F0;}
+.out .in{width:250px; height:150px; position:absolute; left:180px; top:50px; border:1px solid #ccc; display:none}
+--></mce:style><style mce_bogus="1">.out img{border:1px solid #0F0;}
+.out .in{width:250px; height:150px; position:absolute; left:180px; top:50px; border:1px solid #ccc; display:none}</style>
+</head>
+<body>
+<div class="out">
+    <img id="baidu" src="http://www.baidu.com/img/baidu_logo.gif" mce_src="http://www.baidu.com/img/baidu_logo.gif" />
+    <div id="in" class="in">这里面的内容你自己加.距离也自己调.</div>
+</div>
+</body>
+</html>
